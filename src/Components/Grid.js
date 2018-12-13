@@ -12,7 +12,7 @@ class Grid extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            gridSize: [30, 25],
+            gridSize: [25, 25],
             runningGame: false,
             game_of_life: new Game_of_life(),
             interval: 100,
@@ -44,7 +44,7 @@ class Grid extends Component {
 
     reset = () => {
          this.setState({
-             gridSize: [30, 25],
+             gridSize: [25, 25],
              runningGame: false,
              game_of_life: new Game_of_life(),
          });
