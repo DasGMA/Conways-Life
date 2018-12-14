@@ -122,10 +122,8 @@ class Grid extends Component {
         }
     }
 
-    play = () => {console.log("Play");
-        if (!this.state.runningGame)
-            return;
-        
+    play = () => {
+        console.log("Play");
         this.setState({
             runningGame: true,
         }, () =>this.startTheShow())
@@ -180,7 +178,7 @@ class Grid extends Component {
         });   
     }
 
-    startTheShow = () => {
+    startTheShow() {
        if (!this.state.runningGame)
            return;
         this.iteration();
