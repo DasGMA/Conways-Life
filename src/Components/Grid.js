@@ -41,10 +41,6 @@ class Grid extends Component {
         });
     }
 
-    activeCell(coordinates) {
-        return this.nextIteration.has(coordinates);
-    }
-
     newCell (coordinates) {
         this.aliveOrganizms.set(coordinates.x + "," + coordinates.y, {x: coordinates.x, y: coordinates.y});
     }
